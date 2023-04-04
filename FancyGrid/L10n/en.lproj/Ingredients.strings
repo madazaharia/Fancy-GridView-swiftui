@@ -1,0 +1,8 @@
+
+/*
+  Ingredients.strings
+  Fruta
+*/
+
+/* Ingredients of a smoothie. For languages that have different words for "Ingredient" based on semantic context */
+"Ingredients.menu" = "Ingredients";

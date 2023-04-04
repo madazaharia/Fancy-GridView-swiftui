@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1FAA000029DCC88200E3B271 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FAAFFFF29DCC88200E3B271 /* Preview Assets.xcassets */; };
+		1FAA000C29DCC8AA00E3B271 /* IngredientGraphic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA000729DCC8A900E3B271 /* IngredientGraphic.swift */; };
+		1FAA000D29DCC8AA00E3B271 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA000829DCC8A900E3B271 /* Ingredient.swift */; };
+		1FAA000E29DCC8AA00E3B271 /* IngredientCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA000929DCC8AA00E3B271 /* IngredientCard.swift */; };
+		1FAA000F29DCC8AA00E3B271 /* Ingredient+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA000A29DCC8AA00E3B271 /* Ingredient+SwiftUI.swift */; };
+		1FAA001029DCC8AA00E3B271 /* Ingredient+NutritionFacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA000B29DCC8AA00E3B271 /* Ingredient+NutritionFacts.swift */; };
+		1FAA001D29DCC91900E3B271 /* NutritionFactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA001229DCC91800E3B271 /* NutritionFactView.swift */; };
+		1FAA001E29DCC91900E3B271 /* NutritionFact+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA001329DCC91800E3B271 /* NutritionFact+Decodable.swift */; };
+		1FAA001F29DCC91900E3B271 /* NutritionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA001429DCC91800E3B271 /* NutritionRow.swift */; };
+		1FAA002029DCC91900E3B271 /* NutritionalItems.json in Resources */ = {isa = PBXBuildFile; fileRef = 1FAA001629DCC91800E3B271 /* NutritionalItems.json */; };
+		1FAA002129DCC91900E3B271 /* NutritionFactsAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FAA001729DCC91800E3B271 /* NutritionFactsAssets.xcassets */; };
+		1FAA002229DCC91900E3B271 /* NutritionFact+Energy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA001829DCC91800E3B271 /* NutritionFact+Energy.swift */; };
+		1FAA002329DCC91900E3B271 /* Nutritions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA001929DCC91900E3B271 /* Nutritions.swift */; };
+		1FAA002429DCC91900E3B271 /* NutritionFact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA001A29DCC91900E3B271 /* NutritionFact.swift */; };
+		1FAA002529DCC91900E3B271 /* UnitIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA001B29DCC91900E3B271 /* UnitIcons.swift */; };
+		1FAA002629DCC91900E3B271 /* DisplayableMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA001C29DCC91900E3B271 /* DisplayableMeasurement.swift */; };
+		1FAA002D29DCC91E00E3B271 /* CircleToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA002829DCC91E00E3B271 /* CircleToggleStyle.swift */; };
+		1FAA002E29DCC91E00E3B271 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA002929DCC91E00E3B271 /* Animations.swift */; };
+		1FAA002F29DCC91E00E3B271 /* SquishableButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA002A29DCC91E00E3B271 /* SquishableButtonStyle.swift */; };
+		1FAA003029DCC91E00E3B271 /* CapsuleButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA002B29DCC91E00E3B271 /* CapsuleButtonStyle.swift */; };
+		1FAA003629DCC95D00E3B271 /* FlipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA003529DCC95D00E3B271 /* FlipView.swift */; };
+		1FAA003829DCC98600E3B271 /* CardActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA003729DCC98600E3B271 /* CardActionButton.swift */; };
+		1FAA003A29DCCA4D00E3B271 /* AnimatableFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA003929DCCA4D00E3B271 /* AnimatableFontModifier.swift */; };
+		1FAA003C29DCCAF600E3B271 /* SmoothieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA003B29DCCAF600E3B271 /* SmoothieView.swift */; };
+		1FAA003E29DCCB7B00E3B271 /* Smoothie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA003D29DCCB7B00E3B271 /* Smoothie.swift */; };
+		1FAA004229DCCBBE00E3B271 /* MeasuredIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA004129DCCBBE00E3B271 /* MeasuredIngredient.swift */; };
+		1FAA004629DCCE7C00E3B271 /* Ingredients.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1FAA004829DCCE7C00E3B271 /* Ingredients.strings */; };
+		1FAA004A29DCCF9A00E3B271 /* Smoothie+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA004929DCCF9A00E3B271 /* Smoothie+SwiftUI.swift */; };
+		1FAAFFF929DCC88100E3B271 /* FancyGridApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAAFFF829DCC88100E3B271 /* FancyGridApp.swift */; };
+		1FAAFFFB29DCC88100E3B271 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAAFFFA29DCC88100E3B271 /* ContentView.swift */; };
+		1FAAFFFD29DCC88200E3B271 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FAAFFFC29DCC88200E3B271 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1FAA000729DCC8A900E3B271 /* IngredientGraphic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientGraphic.swift; sourceTree = "<group>"; };
+		1FAA000829DCC8A900E3B271 /* Ingredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		1FAA000929DCC8AA00E3B271 /* IngredientCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientCard.swift; sourceTree = "<group>"; };
+		1FAA000A29DCC8AA00E3B271 /* Ingredient+SwiftUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ingredient+SwiftUI.swift"; sourceTree = "<group>"; };
+		1FAA000B29DCC8AA00E3B271 /* Ingredient+NutritionFacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ingredient+NutritionFacts.swift"; sourceTree = "<group>"; };
+		1FAA001229DCC91800E3B271 /* NutritionFactView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NutritionFactView.swift; sourceTree = "<group>"; };
+		1FAA001329DCC91800E3B271 /* NutritionFact+Decodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NutritionFact+Decodable.swift"; sourceTree = "<group>"; };
+		1FAA001429DCC91800E3B271 /* NutritionRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NutritionRow.swift; sourceTree = "<group>"; };
+		1FAA001629DCC91800E3B271 /* NutritionalItems.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NutritionalItems.json; sourceTree = "<group>"; };
+		1FAA001729DCC91800E3B271 /* NutritionFactsAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = NutritionFactsAssets.xcassets; sourceTree = "<group>"; };
+		1FAA001829DCC91800E3B271 /* NutritionFact+Energy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NutritionFact+Energy.swift"; sourceTree = "<group>"; };
+		1FAA001929DCC91900E3B271 /* Nutritions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nutritions.swift; sourceTree = "<group>"; };
+		1FAA001A29DCC91900E3B271 /* NutritionFact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NutritionFact.swift; sourceTree = "<group>"; };
+		1FAA001B29DCC91900E3B271 /* UnitIcons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitIcons.swift; sourceTree = "<group>"; };
+		1FAA001C29DCC91900E3B271 /* DisplayableMeasurement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayableMeasurement.swift; sourceTree = "<group>"; };
+		1FAA002829DCC91E00E3B271 /* CircleToggleStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleToggleStyle.swift; sourceTree = "<group>"; };
+		1FAA002929DCC91E00E3B271 /* Animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
+		1FAA002A29DCC91E00E3B271 /* SquishableButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquishableButtonStyle.swift; sourceTree = "<group>"; };
+		1FAA002B29DCC91E00E3B271 /* CapsuleButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CapsuleButtonStyle.swift; sourceTree = "<group>"; };
+		1FAA003529DCC95D00E3B271 /* FlipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlipView.swift; sourceTree = "<group>"; };
+		1FAA003729DCC98600E3B271 /* CardActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardActionButton.swift; sourceTree = "<group>"; };
+		1FAA003929DCCA4D00E3B271 /* AnimatableFontModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatableFontModifier.swift; sourceTree = "<group>"; };
+		1FAA003B29DCCAF600E3B271 /* SmoothieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmoothieView.swift; sourceTree = "<group>"; };
+		1FAA003D29DCCB7B00E3B271 /* Smoothie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Smoothie.swift; sourceTree = "<group>"; };
+		1FAA004129DCCBBE00E3B271 /* MeasuredIngredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasuredIngredient.swift; sourceTree = "<group>"; };
+		1FAA004729DCCE7C00E3B271 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Ingredients.strings; sourceTree = "<group>"; };
+		1FAA004929DCCF9A00E3B271 /* Smoothie+SwiftUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Smoothie+SwiftUI.swift"; sourceTree = "<group>"; };
+		1FAAFFF529DCC88100E3B271 /* FancyGrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FancyGrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FAAFFF829DCC88100E3B271 /* FancyGridApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyGridApp.swift; sourceTree = "<group>"; };
+		1FAAFFFA29DCC88100E3B271 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1FAAFFFC29DCC88200E3B271 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1FAAFFFF29DCC88200E3B271 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FAAFFF229DCC88100E3B271 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FAA000629DCC89B00E3B271 /* Ingredients */ = {
+			isa = PBXGroup;
+			children = (
+				1FAA000829DCC8A900E3B271 /* Ingredient.swift */,
+				1FAA000B29DCC8AA00E3B271 /* Ingredient+NutritionFacts.swift */,
+				1FAA000A29DCC8AA00E3B271 /* Ingredient+SwiftUI.swift */,
+				1FAA000929DCC8AA00E3B271 /* IngredientCard.swift */,
+				1FAA000729DCC8A900E3B271 /* IngredientGraphic.swift */,
+			);
+			path = Ingredients;
+			sourceTree = "<group>";
+		};
+		1FAA001129DCC91800E3B271 /* NutritionFacts */ = {
+			isa = PBXGroup;
+			children = (
+				1FAA001229DCC91800E3B271 /* NutritionFactView.swift */,
+				1FAA001329DCC91800E3B271 /* NutritionFact+Decodable.swift */,
+				1FAA001429DCC91800E3B271 /* NutritionRow.swift */,
+				1FAA001529DCC91800E3B271 /* Resources */,
+				1FAA001829DCC91800E3B271 /* NutritionFact+Energy.swift */,
+				1FAA001929DCC91900E3B271 /* Nutritions.swift */,
+				1FAA001A29DCC91900E3B271 /* NutritionFact.swift */,
+				1FAA001B29DCC91900E3B271 /* UnitIcons.swift */,
+				1FAA001C29DCC91900E3B271 /* DisplayableMeasurement.swift */,
+			);
+			path = NutritionFacts;
+			sourceTree = "<group>";
+		};
+		1FAA001529DCC91800E3B271 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1FAA001629DCC91800E3B271 /* NutritionalItems.json */,
+				1FAA001729DCC91800E3B271 /* NutritionFactsAssets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1FAA002729DCC91E00E3B271 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				1FAA002829DCC91E00E3B271 /* CircleToggleStyle.swift */,
+				1FAA002929DCC91E00E3B271 /* Animations.swift */,
+				1FAA002A29DCC91E00E3B271 /* SquishableButtonStyle.swift */,
+				1FAA002B29DCC91E00E3B271 /* CapsuleButtonStyle.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		1FAA003229DCC93A00E3B271 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1FAA003929DCCA4D00E3B271 /* AnimatableFontModifier.swift */,
+				1FAA003729DCC98600E3B271 /* CardActionButton.swift */,
+				1FAA003529DCC95D00E3B271 /* FlipView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		1FAA003329DCC94200E3B271 /* AppEntry */ = {
+			isa = PBXGroup;
+			children = (
+				1FAAFFF829DCC88100E3B271 /* FancyGridApp.swift */,
+			);
+			path = AppEntry;
+			sourceTree = "<group>";
+		};
+		1FAA003429DCC94C00E3B271 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1FAAFFFA29DCC88100E3B271 /* ContentView.swift */,
+				1FAA003B29DCCAF600E3B271 /* SmoothieView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1FAA003F29DCCB7D00E3B271 /* Smoothie */ = {
+			isa = PBXGroup;
+			children = (
+				1FAA003D29DCCB7B00E3B271 /* Smoothie.swift */,
+				1FAA004929DCCF9A00E3B271 /* Smoothie+SwiftUI.swift */,
+			);
+			path = Smoothie;
+			sourceTree = "<group>";
+		};
+		1FAA004029DCCBAF00E3B271 /* Recipe */ = {
+			isa = PBXGroup;
+			children = (
+				1FAA004129DCCBBE00E3B271 /* MeasuredIngredient.swift */,
+			);
+			path = Recipe;
+			sourceTree = "<group>";
+		};
+		1FAA004329DCCE5900E3B271 /* L10n */ = {
+			isa = PBXGroup;
+			children = (
+				1FAA004829DCCE7C00E3B271 /* Ingredients.strings */,
+			);
+			path = L10n;
+			sourceTree = "<group>";
+		};
+		1FAAFFEC29DCC88100E3B271 = {
+			isa = PBXGroup;
+			children = (
+				1FAAFFF729DCC88100E3B271 /* FancyGrid */,
+				1FAAFFF629DCC88100E3B271 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1FAAFFF629DCC88100E3B271 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FAAFFF529DCC88100E3B271 /* FancyGrid.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FAAFFF729DCC88100E3B271 /* FancyGrid */ = {
+			isa = PBXGroup;
+			children = (
+				1FAA003329DCC94200E3B271 /* AppEntry */,
+				1FAA003429DCC94C00E3B271 /* Views */,
+				1FAA003229DCC93A00E3B271 /* Components */,
+				1FAA004329DCCE5900E3B271 /* L10n */,
+				1FAA004029DCCBAF00E3B271 /* Recipe */,
+				1FAA003F29DCCB7D00E3B271 /* Smoothie */,
+				1FAA000629DCC89B00E3B271 /* Ingredients */,
+				1FAA001129DCC91800E3B271 /* NutritionFacts */,
+				1FAA002729DCC91E00E3B271 /* Styles */,
+				1FAAFFFC29DCC88200E3B271 /* Assets.xcassets */,
+				1FAAFFFE29DCC88200E3B271 /* Preview Content */,
+			);
+			path = FancyGrid;
+			sourceTree = "<group>";
+		};
+		1FAAFFFE29DCC88200E3B271 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1FAAFFFF29DCC88200E3B271 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1FAAFFF429DCC88100E3B271 /* FancyGrid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FAA000329DCC88200E3B271 /* Build configuration list for PBXNativeTarget "FancyGrid" */;
+			buildPhases = (
+				1FAAFFF129DCC88100E3B271 /* Sources */,
+				1FAAFFF229DCC88100E3B271 /* Frameworks */,
+				1FAAFFF329DCC88100E3B271 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FancyGrid;
+			productName = FancyGrid;
+			productReference = 1FAAFFF529DCC88100E3B271 /* FancyGrid.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1FAAFFED29DCC88100E3B271 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					1FAAFFF429DCC88100E3B271 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 1FAAFFF029DCC88100E3B271 /* Build configuration list for PBXProject "FancyGrid" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1FAAFFEC29DCC88100E3B271;
+			productRefGroup = 1FAAFFF629DCC88100E3B271 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1FAAFFF429DCC88100E3B271 /* FancyGrid */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1FAAFFF329DCC88100E3B271 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FAA000029DCC88200E3B271 /* Preview Assets.xcassets in Resources */,
+				1FAA002129DCC91900E3B271 /* NutritionFactsAssets.xcassets in Resources */,
+				1FAA004629DCCE7C00E3B271 /* Ingredients.strings in Resources */,
+				1FAAFFFD29DCC88200E3B271 /* Assets.xcassets in Resources */,
+				1FAA002029DCC91900E3B271 /* NutritionalItems.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FAAFFF129DCC88100E3B271 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FAA002529DCC91900E3B271 /* UnitIcons.swift in Sources */,
+				1FAA003629DCC95D00E3B271 /* FlipView.swift in Sources */,
+				1FAA001029DCC8AA00E3B271 /* Ingredient+NutritionFacts.swift in Sources */,
+				1FAA003E29DCCB7B00E3B271 /* Smoothie.swift in Sources */,
+				1FAA003029DCC91E00E3B271 /* CapsuleButtonStyle.swift in Sources */,
+				1FAA002E29DCC91E00E3B271 /* Animations.swift in Sources */,
+				1FAA003829DCC98600E3B271 /* CardActionButton.swift in Sources */,
+				1FAA001E29DCC91900E3B271 /* NutritionFact+Decodable.swift in Sources */,
+				1FAA002F29DCC91E00E3B271 /* SquishableButtonStyle.swift in Sources */,
+				1FAA003A29DCCA4D00E3B271 /* AnimatableFontModifier.swift in Sources */,
+				1FAA002329DCC91900E3B271 /* Nutritions.swift in Sources */,
+				1FAA002429DCC91900E3B271 /* NutritionFact.swift in Sources */,
+				1FAA000D29DCC8AA00E3B271 /* Ingredient.swift in Sources */,
+				1FAAFFFB29DCC88100E3B271 /* ContentView.swift in Sources */,
+				1FAA002D29DCC91E00E3B271 /* CircleToggleStyle.swift in Sources */,
+				1FAA000F29DCC8AA00E3B271 /* Ingredient+SwiftUI.swift in Sources */,
+				1FAA001F29DCC91900E3B271 /* NutritionRow.swift in Sources */,
+				1FAA003C29DCCAF600E3B271 /* SmoothieView.swift in Sources */,
+				1FAA000C29DCC8AA00E3B271 /* IngredientGraphic.swift in Sources */,
+				1FAA000E29DCC8AA00E3B271 /* IngredientCard.swift in Sources */,
+				1FAA004229DCCBBE00E3B271 /* MeasuredIngredient.swift in Sources */,
+				1FAAFFF929DCC88100E3B271 /* FancyGridApp.swift in Sources */,
+				1FAA002229DCC91900E3B271 /* NutritionFact+Energy.swift in Sources */,
+				1FAA002629DCC91900E3B271 /* DisplayableMeasurement.swift in Sources */,
+				1FAA001D29DCC91900E3B271 /* NutritionFactView.swift in Sources */,
+				1FAA004A29DCCF9A00E3B271 /* Smoothie+SwiftUI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1FAA004829DCCE7C00E3B271 /* Ingredients.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FAA004729DCCE7C00E3B271 /* en */,
+			);
+			name = Ingredients.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1FAA000129DCC88200E3B271 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1FAA000229DCC88200E3B271 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1FAA000429DCC88200E3B271 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FancyGrid/Preview Content\"";
+				DEVELOPMENT_TEAM = UTG2V2H3FK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ro.deltaapps.FancyGrid;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1FAA000529DCC88200E3B271 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FancyGrid/Preview Content\"";
+				DEVELOPMENT_TEAM = UTG2V2H3FK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ro.deltaapps.FancyGrid;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FAA000329DCC88200E3B271 /* Build configuration list for PBXNativeTarget "FancyGrid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FAA000429DCC88200E3B271 /* Debug */,
+				1FAA000529DCC88200E3B271 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FAAFFF029DCC88100E3B271 /* Build configuration list for PBXProject "FancyGrid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FAA000129DCC88200E3B271 /* Debug */,
+				1FAA000229DCC88200E3B271 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1FAAFFED29DCC88100E3B271 /* Project object */;
+}
