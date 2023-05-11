@@ -13,7 +13,7 @@ extension Ingredient {
     
     /// Defines how the `Ingredient`'s title should be displayed in card mode
     struct CardTitle {
-        var color = Color.black
+        var color = Color.black //
         var rotation = Angle.degrees(0)
         var offset = CGSize.zero
         var blendMode = BlendMode.normal

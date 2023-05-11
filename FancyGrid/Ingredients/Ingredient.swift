@@ -41,11 +41,4 @@ extension Ingredient {
         .strawberry,
         .watermelon
     ]
-    
-    init?(for id: Ingredient.ID) {
-        guard let result = Ingredient.all.first(where: { $0.id == id }) else {
-            return nil
-        }
-        self = result
-    }
 }
